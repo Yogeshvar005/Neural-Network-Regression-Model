@@ -45,23 +45,23 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-### Name:YOGESHVAR M
-### Register Number:212222230180
+### Name: YOGESHVAR M
+### Register Number: 212222230180
 ```python
 class NeuralNet(nn.Module):
   def __init__(self):
         super().__init__()
-        class NeuralNet(nn.Module):
-          self.fc1 = nn. Linear (1, 5)
-          self.fc2 = nn. Linear (5, 2)
-          self.fc3 = nn. Linear (2, 1)
-          self.relu = nn. ReLU()
-          self.history = {'loss': []}
+        self.fc1 = nn.Linear(1, 8)
+        self.fc2 = nn.Linear(8, 10)
+        self.fc3 = nn.Linear(10, 1)
+        self.relu = nn.ReLU()
+        self.history = {'loss': []}
+
   def forward(self, x):
-    x = self.relu(self.fc1(x))
-    x = self.relu(self.fc2(x))
-    x = self. fc3(x)
-    return x
+        x = self.relu(self.fc1(x))
+        x = self.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
 ```
 ```python
 ai_brain = NeuralNet ()
